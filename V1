@@ -1,0 +1,215 @@
+def calculation():
+    DAG = float(input("How Many DAG tokens do you own?: "))
+    
+    LTX = float(input("How Many LTX tokens do you own?: "))
+    
+    ADS = float(input("How Many ADS tokens do you own?: "))
+
+    HERO = float(input("How Many HERO tokens do you own?: "))
+    
+    print("\n")
+    
+    
+    def yes():
+        print("\n")
+        
+        DAG_CAP = float(input("What is the current market cap of DAG?: "))
+        
+        LTX_CAP = float(input("What is the current market cap of LTX?: "))
+        
+        ADS_CAP = float(input("What is the current market cap of ADS?: "))
+        
+        HERO_CAP = float(input("What is the current market cap of HERO?: "))
+        
+        
+        cap26B = 26000000000
+        cap100B = 100000000000
+        cap1T = 1000000000000
+        cap3T = 3000000000000
+    
+        print("\n")
+        
+        DAG_Price = float(input("DAG Price Per Token: $"))
+        
+        
+        
+        LTX_Price = float(input("LTX Price Per Token: $"))
+        
+        #dag and ltx final
+        DAG_final_DOGE = ((cap100B / DAG_CAP) * DAG_Price) * DAG 
+        
+        DAG_final_BITCOIN = ((cap1T / DAG_CAP) * DAG_Price) * DAG 
+        
+        DAG_final_APPLE = ((cap3T / DAG_CAP) * DAG_Price) * DAG
+        
+        LTX_final_competition = ((cap26B / LTX_CAP) * LTX_Price) * LTX
+        
+        LTX_final_DOGE = ((cap100B / LTX_CAP) * LTX_Price) * LTX
+        #ads and hero final
+        ADS_Price = float(input("ADS Price Per Token: $"))
+        
+        
+        HERO_Price = float(input("HERO Price Per Token: $"))
+        
+        ADS_final_DOGE = ((cap100B / ADS_CAP) * ADS_Price) * ADS
+        
+        HERO_final_DOGE = ((cap100B / HERO_CAP) * HERO_Price) * HERO
+        
+        print("Current Prices: ")  
+        
+        print("\n")
+        
+        print("DAG Token: " + str(DAG_Price))
+        print("DAG Cap: " + str(DAG_CAP))
+        print("\n")
+        print("LTX Token: " + str(LTX_Price))
+        print("LTX Cap: " + str(LTX_CAP))
+        print("\n")
+        print("ADS Token: " + str(ADS_Price))
+        print("ADS Cap: " + str(ADS_CAP))
+        print("\n")
+        print("HERO Token: " + str(HERO_Price))
+        print("HERO Cap: " + str(HERO_CAP))
+        
+        print("\n_____________________________________________\n")
+    
+        print("HOW MUCH TOTAL WEALTH:\n")
+        print("DAG: ")
+        print("When DAG Reaches 100 Billion (DOGE): $" + str(DAG_final_DOGE))
+        print("When DAG Reaches 1 Trillion (BTC): $" + str(DAG_final_BITCOIN))
+        print("When DAG Reaches 3 Trillion (APPLE): $" + str(DAG_final_APPLE))
+    
+        print("\n")
+        print("When LTX Reaches 26 Billion (UNI):" + str(LTX_final_competition))
+        print("When LTX Reaches 100 Billion (DOGE):" + str(LTX_final_DOGE))
+        
+        print("\n")
+        print("When ADS Reaches 100 Billion (DOGE):" +str(ADS_final_DOGE))
+        
+        print("\n")
+        print("When HERO Reaches 100 Billion (DOGE):" + str(HERO_final_DOGE))
+        
+        todo = ( DAG_final_DOGE + LTX_final_DOGE + ADS_final_DOGE + HERO_final_DOGE )
+        print("\n")
+        print("TOTAL (Assuming all investments grow to size of DOGE): $" + str(todo))
+    
+  
+        
+    def no():
+        cap26B = 26000000000
+        cap100B = 100000000000
+        cap1T = 1000000000000
+        cap3T = 3000000000000
+    
+        print("\n")
+        
+        DAG_Price = .175730
+        
+        DAG_CAP = 443534307
+        
+        LTX_Price = .720349
+        
+        LTX_CAP = 23138441
+        #dag and ltx final
+        DAG_final_DOGE = ((cap100B / DAG_CAP) * DAG_Price) * DAG 
+        
+        DAG_final_BITCOIN = ((cap1T / DAG_CAP) * DAG_Price) * DAG 
+        
+        DAG_final_APPLE = ((cap3T / DAG_CAP) * DAG_Price) * DAG
+        
+        LTX_final_competition = ((cap26B / LTX_CAP) * LTX_Price) * LTX
+        
+        LTX_final_DOGE = ((cap100B / LTX_CAP) * LTX_Price) * LTX
+        #ads and hero final
+        ADS_Price = .230095
+        
+        ADS_CAP = 17492712
+        
+        HERO_Price = .057042
+        
+        HERO_CAP = 291807564
+        
+        ADS_final_DOGE = ((cap100B / ADS_CAP) * ADS_Price) * ADS
+        
+        HERO_final_DOGE = ((cap100B / HERO_CAP) * HERO_Price) * HERO
+        
+        print("Current Prices: ")  
+        
+        print("\n")
+        
+        print("DAG Token: " + str(DAG_Price))
+        print("DAG Cap: " + str(DAG_CAP))
+        print("\n")
+        print("LTX Token: " + str(LTX_Price))
+        print("LTX Cap: " + str(LTX_CAP))
+        print("\n")
+        print("ADS Token: " + str(ADS_Price))
+        print("ADS Cap: " + str(ADS_CAP))
+        print("\n")
+        print("HERO Token: " + str(HERO_Price))
+        print("HERO Cap: " + str(HERO_CAP))
+        
+        print("\n_______________________________________________________________________________________\n")
+    
+        print("HOW MUCH TOTAL WEALTH:\n")
+        print("DAG: ")
+        print("When DAG Reaches 100 Billion (DOGE): $" + str(DAG_final_DOGE))
+        print("When DAG Reaches 1 Trillion (BTC): $" + str(DAG_final_BITCOIN))
+        print("When DAG Reaches 3 Trillion (APPLE): $" + str(DAG_final_APPLE))
+    
+        print("\n")
+        print("When LTX Reaches 26 Billion (UNI):" + str(LTX_final_competition))
+        print("When LTX Reaches 100 Billion (DOGE):" + str(LTX_final_DOGE))
+        
+        print("\n")
+        print("When ADS Reaches 100 Billion (DOGE):" +str(ADS_final_DOGE))
+        
+        print("\n")
+        print("When HERO Reaches 100 Billion (DOGE):" + str(HERO_final_DOGE))
+        
+        todo = ( DAG_final_DOGE + LTX_final_DOGE + ADS_final_DOGE + HERO_final_DOGE )
+        todito = (DAG_final_BITCOIN + LTX_final_DOGE + ADS_final_DOGE + HERO_final_DOGE)
+        toditito = (DAG_final_APPLE + LTX_final_DOGE + ADS_final_DOGE + HERO_final_DOGE)
+        print("\n")
+        print("TOTAL (Assuming all investments grow to size of DOGE): $" + str(todo))
+        print("TOTAL (Assuming LTX/ADS/HERO to DOGE & DAG to BITCOIN:) $" + str(todito))
+        print("TOTAL (Assuming LTX/ADS/HERO to DOGE & DAG to APPLE:) $" + str(toditito))
+  
+
+
+    
+    answer = input("Do you want to enter prices manually? \n\nFor YES type [YES] and hit enter \n\nFor NO press any key: \n\n")
+    
+
+    if answer == "yes" or answer == "YES":
+        
+        yes()    
+        
+        
+        
+    else: 
+       
+        no()
+
+calculation()
+
+
+#DAG
+    #DAG to size of 100 Billion
+    #DAG to size of 1 Trillion
+    #DAG to size of 3 Trillion (Apple)
+
+
+
+#LTX
+    #LTX to size of 26 Billion
+    #LTX to size of 100 Billion
+    
+
+#Alkimi
+    #ADS to size of 100 Billion 
+
+
+#HERO
+    #HERO to size of 100 Billion 
+
