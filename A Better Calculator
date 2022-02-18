@@ -21,7 +21,7 @@ def calculation():
     
     
     
-    print("\n\n_________________________________________________________________________\n\n")
+    print("\n\n**********************************************************************************\n\n")
     
     print("Your " + str(coin_count) + " " + coin + " is now worth $" + str(final_investment))
     
@@ -31,17 +31,17 @@ def calculation():
     
     
 
-print("W E L C O M E to INVESTING MADE EASY")
-print("Just PLUG IN YOUR NUMBERS ill predict for you ;) ")
+print("W E L C O M E")
 
-print("Do you want to do a calculation? ")
 
-answer = str(input("Enter YES to start predicting! >:) \n" ))
+answer = "yes"
 
-while answer == "yes" or "YES": 
+while answer == "yes": 
+    print("\n\n")
     calculation()
+    print("\n\n")
     answer2 = str(input("Do you want to perfrom another calculation?  \n "))
-    if answer2 != "yes" or "YES":
+    if answer2 != answer:
         break
 
 
