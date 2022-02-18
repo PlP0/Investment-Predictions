@@ -1,0 +1,50 @@
+
+def calculation():    
+    coin = str(input("What coin will we be working with? "))
+    
+    coin_count = float(input("How many " + coin + " tokens do you own? "))
+    
+    initial_price = float(input("What is the initial Token Price:  $"))
+    
+    initial_market = float(input("What is the initial market cap:  $"))
+    
+    final_market = float(input("What is the new market cap:  $"))
+    
+    growth = final_market / initial_market
+    
+    final_price = initial_price * growth 
+    
+    percent = ((final_market - initial_market) / initial_market ) * 100
+    
+    final_investment = final_price * coin_count 
+    
+    
+    
+    
+    print("\n\n_________________________________________________________________________\n\n")
+    
+    print("Your " + str(coin_count) + " " + coin + " is now worth $" + str(final_investment))
+    
+    print("The coin " + str(growth) + "X") 
+    
+    print("It grew " + str(percent) + "%")
+    
+    
+
+print("W E L C O M E to INVESTING MADE EASY")
+print("Just PLUG IN YOUR NUMBERS ill predict for you ;) ")
+
+print("Do you want to do a calculation? ")
+
+answer = str(input("Enter YES to start predicting! >:) \n" ))
+
+while answer == "yes" or "YES": 
+    calculation()
+    answer2 = str(input("Do you want to perfrom another calculation?  \n "))
+    if answer2 != "yes" or "YES":
+        break
+
+
+
+
+
