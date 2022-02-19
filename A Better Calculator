@@ -29,7 +29,7 @@ def calculation():
     
     print("It grew " + str(percent) + "%")
     
-    print("Price per coin $" + final_price)
+    print("Price per coin $" + str(final_price))
 
 print("W E L C O M E")
 
